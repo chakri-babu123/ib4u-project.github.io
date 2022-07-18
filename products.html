@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+   <!-- ===== Link Swiper's CSS ===== -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   <!-- ===== Fontawesome CDN Link ===== -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Packages</title>
+    <style>
+        html, body{
+             overflow-x: hidden;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+         }
+        .nas{
+            border: 2px solid rgb(223, 222, 222);
+            margin-left: 20px;
+            margin-top: 30px;
+            background-color:  rgb(233, 231, 231);
+        }
+
+        .nas ul li{
+            list-style-type: none;
+            line-height: 40px;
+        }
+        .nas ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .ks{
+          display: flex;
+           
+           
+        }
+
+        .jas{
+            position: absolute;
+           margin-left: 200px;
+           margin-top: 60px;
+           margin-right: 40px;
+        }
+
+        .ks .nas ul li a:hover{
+            color: black;
+           
+        }
+
+        .rwm{
+            margin-top: 30px;
+            padding-right: 30px;
+            
+        }
+
+        .ak{
+            width: 220px;
+            height: 180px;
+            margin-left: 40px;
+        }
+
+        @media (max-width:1020px) {
+            .jas{
+                position: relative;
+                margin-left: 0px;
+            }
+            .ak{
+                margin-top: 40px;
+                width: 100%;
+                height: 180px;
+                padding-right: 10px;
+            }
+            .nas{
+                margin-left: 0px;
+            }
+            .ks{
+                margin-left: 0px;
+            }
+        }
+
+        #ninja-slider .caption {
+    position:absolute;
+    top:100%;
+}
+
+@media (max-width:1020px) {
+  .ss12{
+    display: inline-flexbox;
+  }
+  .bt22{
+    margin-left: 0px;
+  }
+}
+
+
+
+#pw{
+    margin-left: 45px;
+  
+   
+}
+
+@media (max-height:1368px) {
+  .footer{
+    bottom: 0px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.row > .column {
+  padding: 0 8px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ .column {
+ 
+  width: 25%;
+  display: inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(143, 140, 140);
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 60px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jm{
+  width: 500px;
+}
+
+.ss12{
+  margin-top: 50px;
+  margin-left: 40px;
+ 
+}
+
+.dpb{
+  display: inline-block;
+  margin-top: 5px;
+}
+
+
+
+.dsp{
+  width: 270px;
+}
+
+#cpn{
+  color: red;
+  font-size: 20px;
+}
+
+#ym{
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.btn12{
+  background-color: rgb(252, 233, 58);
+  color: #fefefe;
+  border: none;
+  
+  border-radius: 10px;
+  padding: 10px 8px 10px 8px;
+ 
+}
+
+.bt22{
+  margin-left: 250px;
+}
+
+.btc{
+  margin-top: 150px;
+}
+.work-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: fit-content;
+}
+@media screen and (max-width:600px){.work-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}}
+
+@media (max-width:500px) {
+  .btn12 , .btn22{
+margin-left: 0%;
+padding-left: 0%;
+margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:600px){
+
+}
+
+
+
+
+.header-bg-img{
+  background-image: url("images/package.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  
+}
+
+.text-position{
+  padding: 80px 0px 80px 0px;
+}
+
+.card678{
+    width: 250px;
+    height: 20rem;
+    text-align: center;
+   box-shadow: 5px 5px 5px rgb(232, 231, 231);
+}
+
+@media (max-width:800px) {
+    .card678{
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+}
+}
+
+.card-body123 ul li{
+    list-style-type: none;
+}
+
+.para-color{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.head-bg-color{
+  padding: 6px 0px 6px 0px;
+}
+
+.list-one{
+  
+}
+
+.list-middle{
+  
+}
+
+.hover-table-layout{
+  padding-top: 50px;
+}
+
+.card-body123{
+  padding-top: 20px;
+}
+    </style>
+</head>
+
+<body>
+  <!------NAVBAR STARTED------>
+  <header class="header">
+    <a href="index.html" class="logo"><img src="images/LOGO IB4U.png" width="110"></a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="aboutus.html" class="menu-item">About Us</a></li>
+
+      <li>
+        <a href="#" class="menu-item expand-btn">Services</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <!-- partial:index.partial.html -->
+                <div class="slider" id="slider">
+                  <a href="previouswork.html">
+                  <div class="slide" id="slide">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                  </div>
+                  </a>
+                  <button class="ctrl-btn pro-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                  <button class="ctrl-btn pro-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+                <!-- partial -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="products.html" class="menu-item ">Pricing Plan</a>
+        
+      </li>
+      <li><a href="contactus.html" class="menu-item">Contact Us</a></li>
+      <li><a href="myaccount.html" class="menu-item"><i class="bi bi-person-fill"></i></a></li>
+    </ul>
+  </header>
+
+
+  <!------NAVBAR ENDED------>
+
+  <!------HEADER STARTED-------->
+
+   <section>
+      <div class="header-bg-img text-position">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-xl-12 col-md-12">
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Alias, beatae.</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil odio totam fugit nobis optio odit?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis assumenda unde fugit omnis quaerat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!------HEADER ENDED-------->
+
+
+
+  <!------OUR PACKAGES STARTED-->
+
+<section  class="section-margin">
+    <div class="main text-center mt-5">
+        <div class="bdr"></div>
+        <h2 class="font-weight-light pt-4 pb-4">Student Packages</h2>
+       
+    </div>
+    <!-------next one-->
+    <div class="hover-table-layout">
+        <div class="listing-item list-one" style="display: flex;flex-direction: column;">
+            <figcaption>
+                <div class="caption" style="background: linear-gradient(to right, #4757EB, #6181EE);">
+                    <h1>&nbsp;</h1>
+                    <p>Silver</p>
+                </div>
+            </figcaption>
+            <ul class="features">
+                <li><span class="kf">Telephonic
+                        Consultatiions With Project Head</span></li>
+                <li><span class="kf">5 Logo Design
+                        Samples limited Revision Rounds</span></li>
+                <li><span class="kf">1 Digital
+                        Business Card - Selected</span></li>
+                <li><span class="kf">Web & App Icons
+                        Set of Finial Logo</span></li>
+                <li><span class="kf">HD Square Profile
+                        Image</span></li>
+                
+            </ul>
+            <a style="text-decoration: none;" href="#" style="width: 100%;">
+                <div class="btn btnsel"
+                    style="background: linear-gradient(to right, #4757EB, #6181EE);margin-top: auto;margin-bottom: 20px; padding-top: 10px;">
+                    Buy Now</div>
+            </a>
+        </div>
+        <div class="listing-item list-middle" style="display: flex;flex-direction: column;">
+            <figcaption>
+                <div class="caption" style="background: linear-gradient(to right, #F8B91E, #F7912D);">
+                    <h1 style="margin-bottom: 4px;
+margin-top: 20px;"><span
+                            style="font-size: 14px;border: 10px;border-radius: 15px;background: white;color: #f79c29;">&nbsp;<i
+                                class="bi bi-star" style="color: #feaf2a;"></i> Recommended&nbsp;</span></h1>
+                    <p>Gold</p>
+                </div>
+            </figcaption>
+            <ul class="features">
+                <li><span class="kf"> 2 Dedicated
+                        Designer 24 / 7</span></li>
+                <li><span class="kf">Telephonic /
+                        webinar Consultation with Project Head</span></li>
+                <li><span class="kf">15 Logo Design
+                        Samples Unlimited Revision Rounds</span></li>
+                <li><span class="kf">Business Card and
+                        Digital Business Card</span></li>
+                <li><span class="kf">LetterHead &
+                        Envele Design</span></li>
+                <li><span class="kf">1 Intro Video for
+                        Selected Logo - 1080p(Complimentary)</span></li>
+                <li><span class="kf">25+ Favicon Web &
+                        App Icons Set OF final Logo</span></li>
+                
+                
+
+            </ul>
+            <a style="text-decoration: none;" href="#" style="width: 100%;">
+                <div class="btn btnsel"
+                    style="background: linear-gradient(to right, #F8B91E, #F7912D);margin-top: auto;margin-bottom: 20px; padding-top: 10px;">
+                    Buy Now</div>
+            </a>
+        </div>
+        <div class="listing-item list-one" style="display: flex;flex-direction: column;">
+            <figcaption>
+                <div class="caption" style="background: linear-gradient(to right, #8D3BAA, #A666B0);">
+                    <h1>&nbsp;</h1>
+                    <p>Platinum</p>
+                </div>
+            </figcaption>
+            <ul class="features">
+                <li><span class="kf">Am of Project
+                        Head & 2 Dedicated Designers</span></li>
+                <li><span class="kf">Telephonic /
+                        webinar Consultation with Project Head</span></li>
+                <li><span class="kf">10 Logo Design
+                        Samples Unlimited Revision Rounds</span></li>
+                <li><span class="kf">Business Card and
+                        Design Samples</span></li>
+                <li><span class="kf">1 Intro Video for
+                        Selected Logo - 720p(Complimentary)</span></li>
+                <li><span class="kf"> Web & App Icons
+                        Set OF final Logo</span></li>
+               
+               
+
+            </ul>
+            <a style="text-decoration: none;" href="#" style="width: 100%;">
+                <div class="btn btnsel"
+                    style="background: linear-gradient(to right, #8D3BAA, #A666B0);margin-top: auto;margin-bottom: 20px; padding-top: 10px;">
+                    Buy Now</div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!--------->
+
+</section>
+
+<!-------OUR PACKAGES ENDED---->
+
+
+
+<!--------STUDENTS PACKAGES STARTED---->
+
+<div class="container  section-margin">
+
+    <div class="main text-center mt-5">
+        <div class="bdr"></div>
+        <h2 class="font-weight-light pt-4 pb-4">Student Packages</h2>
+        
+    </div>
+    
+    <div class="row">
+        
+        <div class="col-md-3">
+            
+            <div class="card678">
+                <div class="head-bg-color" style="background: linear-gradient(to right, #8D3BAA, #A666B0);">
+        <p class="para-color">Flyer or <br> design</p>
+        
+        </div>
+  <div class="card-body123">
+    
+    <ul>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>    
+    </ul>
+  </div>
+</div>
+            
+            </div>
+        <div class="col-md-3">
+            
+            <div class="card678">
+                <div class="head-bg-color" style="background: linear-gradient(to right, #4757EB, #6181EE);">
+        <p class="para-color">Flyer or <br> design</p>
+        
+        </div>
+  <div class="card-body123">
+   
+    <ul>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>    
+    </ul>
+  </div>
+</div>
+            
+            </div>
+        <div class="col-md-3">
+            
+            <div class="card678">
+                <div class="head-bg-color" style="background: linear-gradient(to right, #8D3BAA, #A666B0);">
+        <p class="para-color">Flyer or <br> design</p>
+        
+        </div>
+  <div class="card-body123">
+   
+    <ul>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>    
+    </ul>
+  </div>
+</div>
+            
+            </div>
+        <div class="col-md-3">
+            
+            <div class="card678">
+                <div class="head-bg-color" style="background: linear-gradient(to right, #8D3BAA, #A666B0);">
+        <p class="para-color">Flyer or <br> design</p>
+        
+        </div>
+  <div class="card-body123">
+   
+    <ul>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>
+    <li><h6>Lorem, ipsum dolor.</h6></li>    
+    </ul>
+  </div>
+</div>
+            
+            </div>
+        
+        
+        </div>
+   
+    
+    </div>
+
+
+
+<!------STUDENTS PACKAGES ENDED-------->
+
+
+
+
+
+  
+  <!-- partial:index.partial.html -->
+  <footer class="footer-section section-margin">
+    <div class="container">
+      <div class="footer-cta">
+
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="images/LOGO IB4U.png" height="150px" width="150px" class="img-fluid"
+                      alt="logo"></a>
+                </div>
+                <div class="footer-text">
+                  <p id="footer-para">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                    incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="previouswork.html">Services</a></li>
+                  <li><a href="products.html">Pricing Plan</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Keep in touch</h3>
+                </div>
+
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="bi bi-chevron-right"></i></i></button>
+                  </form>
+                </div>
+                <div class="footer-social-icon">
+                  <span></span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                  <a href="#"><i class="fab fa-youtube youtube-bg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="copyright-area">
+    <div class="container">
+    <div class="row footer-row">
+      <div class=" col-md-6">
+        <div class="copyright-text text-left">
+          <p>Copyright &copy; 2018, All Right Reserved <a href="#">IB4U</a></p>
+        </div>
+      </div>
+      <div class=" col-md-6">
+        <div class="copyright-text text-right">
+          <p>Design & developed by<a href="#"><img src="images/logo-white.svg" width="70"></a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    
+</body>
+</html>

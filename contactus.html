@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Contact Us</title>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .nas {
+            border: 2px solid rgb(223, 222, 222);
+            margin-left: 20px;
+            margin-top: 30px;
+            background-color: rgb(233, 231, 231);
+        }
+
+        .nas ul li {
+            list-style-type: none;
+            line-height: 40px;
+        }
+
+        .nas ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .ks {
+            display: flex;
+
+
+        }
+
+        .jas {
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 60px;
+            margin-right: 40px;
+        }
+
+        .ks .nas ul li a:hover {
+            color: black;
+
+        }
+
+        .rwm {
+            margin-top: 30px;
+            padding-right: 30px;
+
+        }
+
+        .ak {
+            width: 220px;
+            height: 180px;
+            margin-left: 40px;
+        }
+
+        @media (max-width:1020px) {
+            .jas {
+                position: relative;
+                margin-left: 0px;
+            }
+
+            .ak {
+                margin-top: 40px;
+                width: 100%;
+                height: 180px;
+                padding-right: 10px;
+            }
+
+            .nas {
+                margin-left: 0px;
+            }
+
+            .ks {
+                margin-left: 0px;
+            }
+        }
+
+        #ninja-slider .caption {
+            position: absolute;
+            top: 100%;
+        }
+
+        @media (max-width:1020px) {
+            .ss12 {
+                display: inline-flexbox;
+            }
+
+            .bt22 {
+                margin-left: 0px;
+            }
+        }
+
+
+
+        #pw {
+            margin-left: 45px;
+
+
+        }
+
+        @media (max-height:1368px) {
+            .footer {
+                bottom: 0px;
+            }
+
+            .row {
+                --bs-gutter-x: 0;
+                --bs-gutter-y: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: calc(var(--bs-gutter-y) * -1);
+                margin-right: calc(var(--bs-gutter-x) * -.5);
+                margin-left: calc(var(--bs-gutter-x) * -.5);
+            }
+
+            .row>.column {
+                padding: 0 8px;
+
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+
+                width: 25%;
+                display: inline-block;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(143, 140, 140);
+
+            }
+
+            /* Modal Content */
+            .modal-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+            }
+
+            /* The Close Button */
+            .close {
+                color: white;
+                position: absolute;
+                top: 10px;
+                right: 25px;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #999;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            .cursor {
+                cursor: pointer;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            img {
+                margin-bottom: -4px;
+            }
+
+            .caption-container {
+                text-align: center;
+                background-color: white;
+                padding: 2px 16px;
+                color: black;
+                position: absolute;
+                margin-left: 50%;
+                margin-top: 60px;
+            }
+
+            .demo {
+                opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+            img.hover-shadow {
+                transition: 0.3s;
+            }
+
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .jm {
+                width: 500px;
+            }
+
+            .ss12 {
+                margin-top: 50px;
+                margin-left: 40px;
+
+            }
+
+            .dpb {
+                display: inline-block;
+                margin-top: 5px;
+            }
+
+
+
+            .dsp {
+                width: 270px;
+            }
+
+            #cpn {
+                color: red;
+                font-size: 20px;
+            }
+
+            #ym {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+
+            .btn12 {
+                background-color: rgb(252, 233, 58);
+                color: #fefefe;
+                border: none;
+
+                border-radius: 10px;
+                padding: 10px 8px 10px 8px;
+
+            }
+
+            .bt22 {
+                margin-left: 250px;
+            }
+
+            .btc {
+                margin-top: 150px;
+            }
+
+            .work-btns {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                height: fit-content;
+            }
+
+            @media screen and (max-width:600px) {
+                .work-col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            @media (max-width:500px) {
+
+                .btn12,
+                .btn22 {
+                    margin-left: 0%;
+                    padding-left: 0%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media screen and (max-width:600px) {}
+
+
+           
+
+            .header-bg-img {
+                background-image: url("images/contact\ us.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                opacity: 0.5;
+                height: 296px;
+
+            }
+
+            .text-position {
+                padding: 80px 0px 80px 0px;
+            }
+
+
+            .work-btns a {
+                text-decoration: none;
+            }
+
+
+            ::selection {
+                color: #fff;
+                background: #0D6EFD;
+            }
+
+            .wrapper {
+                border: none;
+                background: #fff;
+                border-radius: 5px;
+               
+            }
+
+            .wrapper header {
+                font-size: 22px;
+                font-weight: 600;
+                padding: 20px 30px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .wrapper form {
+                margin: 35px 30px;
+            }
+
+            .wrapper form.disabled {
+                pointer-events: none;
+                opacity: 0.7;
+            }
+
+            form .dbl-field {
+                display: flex;
+                margin-bottom: 25px;
+                justify-content: space-between;
+            }
+
+            .dbl-field .field {
+                height: 50px;
+                display: flex;
+                position: relative;
+                width: 100%;
+            }
+
+            .wrapper form i {
+                position: absolute;
+                top: 50%;
+                left: 18px;
+                color: #ccc;
+                font-size: 17px;
+                pointer-events: none;
+                transform: translateY(-50%);
+            }
+
+            form .field input,
+            form .message textarea {
+                width: 100%;
+                height: 100%;
+                outline: none;
+                padding: 0 18px 0 48px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .field input::placeholder,
+            .message textarea::placeholder {
+                color: #ccc;
+            }
+
+            .field input:focus,
+            .message textarea:focus {
+
+                border: 2px solid #0D6EFD;
+            }
+
+            .field input:focus~i,
+            .message textarea:focus~i {
+                color: #0D6EFD;
+            }
+
+            form .message {
+                position: relative;
+            }
+
+            form .message i {
+                top: 30px;
+                font-size: 20px;
+            }
+
+            form .message textarea {
+                min-height: 130px;
+                max-height: 230px;
+                max-width: 100%;
+                min-width: 100%;
+                padding: 15px 20px 0 48px;
+            }
+
+            form .message textarea::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            .message textarea:focus {
+                padding-top: 14px;
+            }
+
+            form .button-area {
+                margin: 25px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .button-area button {
+                color: #fff;
+                border: none;
+                outline: none;
+                font-weight: 600;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 5px;
+                padding: 13px 25px;
+                background: #ffc000;
+                transition: background 0.3s ease;
+            }
+
+            .button-area button:hover {
+                background: #850101;
+                color: #fff;
+            }
+
+            .button-area span {
+                font-size: 17px;
+                margin-left: 30px;
+                display: none;
+            }
+
+            @media (max-width: 600px) {
+                .wrapper header {
+                    text-align: center;
+                }
+
+                .wrapper form {
+                    margin: 35px 20px;
+                }
+
+                form .dbl-field {
+                    flex-direction: column;
+                    margin-bottom: 0px;
+                }
+
+                form .dbl-field .field {
+                    width: 100%;
+                    height: 45px;
+                    margin-bottom: 20px;
+                }
+
+                form .message textarea {
+                    resize: none;
+                }
+
+                form .button-area {
+                    margin-top: 20px;
+                    flex-direction: column;
+                }
+
+                .button-area button {
+                    width: 100%;
+                    padding: 11px 0;
+                    font-size: 16px;
+                }
+
+                .button-area span {
+                    margin: 20px 0 0;
+                    text-align: center;
+                }
+            }
+
+            .form-text {
+                padding-top: 60px;
+                padding-right: 30px;
+            }
+
+            .home-ul-li ul li{
+                list-style-type: none;
+                display: inline-block;
+
+            }
+
+            .home-ul-li ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .contact-text{
+                font-size: 50px;
+            }
+    </style>
+</head>
+
+<body>
+    <!------NAVBAR STARTED------>
+    <header class="header">
+    <a href="index.html" class="logo"><img src="images/LOGO IB4U.png" width="110"></a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="aboutus.html" class="menu-item">About Us</a></li>
+
+      <li>
+        <a href="#" class="menu-item expand-btn">Services</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <!-- partial:index.partial.html -->
+                <div class="slider" id="slider">
+                  <a href="previouswork.html">
+                  <div class="slide" id="slide">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                     <img class="img-card item" src="images/1.png">
+                     <img class="img-card item" src="images/2.png">
+                     <img class="img-card item" src="images/3.png">
+                  </div>
+                  </a>
+                  <button class="ctrl-btn pro-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                  <button class="ctrl-btn pro-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+                <!-- partial -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="products.html" class="menu-item ">Pricing Plan</a>
+        
+      </li>
+      <li><a href="contactus.html" class="menu-item">Contact Us</a></li>
+      <li><a href="myaccount.html" class="menu-item"><i class="bi bi-person-fill"></i></a></li>
+    </ul>
+  </header>
+
+
+    <!------NAVBAR ENDED------>
+
+    <!------HEADER STARTED-------->
+    <section>
+      <div class="header-bg-img text-position">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-xl-12 col-md-12">
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Alias, beatae.</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil odio totam fugit nobis optio odit?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis assumenda unde fugit omnis quaerat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------HEADER ENDED-------->
+
+
+
+    <!--------FORM SECTTION----STARTED-->
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5">
+
+                    <div class="container-fluid form-text">
+                        <h6 class="my-4 fw-bold"><i class="fa fa-1x  fa-map-marker" aria-hidden="true"
+                                style="color:  #ffc000; margin-right: 20px;"></i>Address</h6>
+                           
+
+                        <p class="text-muted" class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit earum a aut sequi nemo?</p>
+                            <hr>
+                       
+                        <h6 class="my-4 fw-bold"><i class="fa fa-1x  fa-phone-square" aria-hidden="true"
+                                style="color:  #ffc000; margin-right: 20px;"></i>Phone Number</h6>
+                        <p class="text-muted" class="my-4">(+91)9999xxxxx</p>
+                        <hr>
+                        <h6 class="my-4 fw-bold"><i class="fa fa-1x  fa-envelope" aria-hidden="true"
+                                style="color: #ffc000; margin-right: 20px;"></i>Email Address</h6>
+                        <p class="text-muted" class="my-4">Loremipsumdolor..com</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="wrapper">
+                        <header>Send us a Message</header>
+                        <form action="#">
+                            <div class="dbl-field">
+                                <div class="field">
+                                    <input type="text" name="name" placeholder="Enter your name">
+                                    <i class='fas fa-user'></i>
+                                </div>
+                              
+                            </div>
+                            <div class="dbl-field">
+                                <div class="field">
+                                    <input type="text" name="email" placeholder="Enter your email">
+                                    <i class='fas fa-envelope'></i>
+                                </div>
+                               
+                            </div>
+                            <div class="dbl-field">
+                                <div class="field">
+                                    <input type="text" name="phone" placeholder="Enter your phone">
+                                    <i class='fas fa-phone-alt'></i>
+                                </div>
+                               
+                            </div>
+                            <div class="message">
+                                <textarea placeholder="Write your message" name="message"></textarea>
+                                <i class="material-icons">message</i>
+                            </div>
+                            <div class="button-area">
+                                <button type="submit">Send Message</button>
+                                <span></span>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--------FORM SECTTION----ENDED-->
+
+
+
+
+    <!-- partial:index.partial.html -->
+     <footer class="footer-section section-margin">
+    <div class="container">
+      <div class="footer-cta">
+
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="images/LOGO IB4U.png" height="150px" width="150px" class="img-fluid"
+                      alt="logo"></a>
+                </div>
+                <div class="footer-text">
+                  <p id="footer-para">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                    incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="previouswork.html">Services</a></li>
+                  <li><a href="products.html">Pricing Plan</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Keep in touch</h3>
+                </div>
+
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="bi bi-chevron-right"></i></i></button>
+                  </form>
+                </div>
+                <div class="footer-social-icon">
+                  <span></span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                  <a href="#"><i class="fab fa-youtube youtube-bg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="copyright-area">
+    <div class="container">
+    <div class="row footer-row">
+      <div class=" col-md-6">
+        <div class="copyright-text text-left">
+          <p>Copyright &copy; 2018, All Right Reserved <a href="#">IB4U</a></p>
+        </div>
+      </div>
+      <div class=" col-md-6">
+        <div class="copyright-text text-right">
+          <p>Design & developed by<a href="#"><img src="images/logo-white.svg" width="70"></a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <!-- partial -->
+
+</body>
+
+</html>

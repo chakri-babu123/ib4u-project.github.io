@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@pperjs/core@2.9.2/dist/umd/pper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration Page</title>
+</head>
+
+
+<style>
+   
+   html, body{
+    overflow-x: hidden;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+
+
+
+        .login-box{
+  position:relative;
+  margin:  auto;
+  width: 350px;
+  height: 80%;
+  background-color: #fff;
+  padding: 10px;
+  
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+
+}
+.lb-header{
+  position:relative;
+  color: #00415d;
+  margin: 5px 5px 10px 5px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #eee;
+  text-align:center;
+  height:28px;
+}
+.lb-header a{
+  margin: 0 25px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.lb-header .active{
+  color: #029f5b;
+  font-size: 18px;
+}
+/*
+.social-login{
+  position: relative;
+  
+  width: 40%;
+  height:auto;
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid #eee;
+ 
+}
+*/
+.social-login a{
+  position: relative;
+  
+  width:calc(15% - 2px);
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 3%;
+  text-align:center;
+  margin-left: 70px;
+  display: inline-block;
+ 
+}
+
+.social-login a i{
+  position: relative;
+  
+  width: 20px;
+  top: 2px;
+  display: inline;
+  
+}
+
+
+ .bi-lock-fill ,.bi-envelope-fill{
+  position: absolute;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.social-login a:first-child{
+  background-color: #49639F;
+}
+.social-login .fa-apple, .icn{
+  background-color: black;
+}
+.social-login a:last-child{
+  background-color: #DF4A32;
+}
+.email-login,.email-signup{
+  position:relative;
+  float: left;
+  width: 100%;
+  height:auto;
+  margin-top: 20px;
+  
+}
+.u-form-group{
+  width:200%;
+  margin-bottom: 10px;
+ 
+}
+
+.u-form-group #select-option{
+    width: calc(50% - 22px);
+  height:45px;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 2px;
+  color: #333;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+}
+
+.u-form-group input[type="email"],
+.u-form-group input[type="number"],
+.u-form-group input[type="text"],
+.u-form-group input[type="password"]{
+  width: calc(50% - 22px);
+  height:45px;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 2px;
+  color: #333;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+}
+
+
+.u-form-group input:focus{
+  border-color: #358efb;
+}
+.u-form-group button{
+  width:47%;
+  background-color: brown;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.forgot-password{
+  width:50%;
+  text-align: left;
+  text-decoration: underline;
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.col-md-6{
+  border: 1px solid black;
+}
+
+.social-login ul li{
+  list-style-type: none;
+  
+  
+}
+
+.social-login ul li a ,i{
+  
+  display: inline-block;
+ 
+}
+
+.bg5{
+  background-color: #666;
+  padding-top: 150px;
+  
+}
+
+#bg6{
+  width: 100%;
+  padding: 0;
+}
+
+.social-login a{
+  margin-left: 10px;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width:412px) {
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+}
+
+@media screen and (max-width: 540px), 
+screen and (max-height: 720px) {
+
+ 
+}  
+
+.radio{
+  padding-left: 10px;
+}
+
+.radio label{
+  padding-left: 10px;
+}
+
+
+
+</style>
+
+
+<body>
+    
+    
+
+ 
+       <div class="row  ">
+           <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+           <img id="bg6" src="images/sign up.jpg" width="100%" height="100%" alt="">
+           </div>
+           <div class="col-md-6 col-sm-6 col-lg-6 bg5">
+            
+            <div class="login-box">
+                <div class="lb-header">
+                 <h5>Registration Form</h5>
+                </div>
+
+               
+             
+
+                <div class="social-login">
+                  <div class="text-center">
+                  <a href="#">
+                    <i class="fa fa-facebook fa-lg"></i>
+                   
+                  </a>
+                  <a class="icn" href="#">
+                    <i class="fa fa-apple fa-lg"></i>
+                   
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  
+                  </a>
+                </div>
+                </div>
+                <form class="email-login">
+
+                  <div class="u-form-group radio">
+                   <input type="radio" name="s1"/> <label class="text-muted" for="">I Am Student / Lecturer</label><br>
+                     <input type="radio" name="s1"/><label class="text-muted" for="">I Am Professional</label>
+                    </div>
+
+                    <div class="u-form-group">
+                       </i><input type="text" placeholder="Full  Name"/>
+                      </div>
+                 
+                  <div class="u-form-group">
+                   </i><input type="email" placeholder="Email"/>
+                  </div>
+                  <div class="u-form-group">
+                   </i><input type="password" placeholder="Password"/>
+                  </div>
+
+                  <div class="u-form-group">
+                   </i><input type="password" placeholder="Confirm  Password"/>
+                  </div>
+
+                  <div class="u-form-group">
+                   </i><input type="number" placeholder="Phone Number"/>
+                  </div>
+
+                  <div class="u-form-group ">
+                    <select name="" id="select-option">
+                        <option class="text-muted" value="Male">Select Gender</option>
+                        <option class="text-muted" value="Male">Male</option>
+                        <option class="text-muted" value="Female">Female</option>
+                    </select>
+                  </div>
+
+                 
+
+                  <div class="u-form-group">
+                   <input type="checkbox" name="" id=""><span style="color: orange; font-size: 13px;"> I agree to the</span> <span><a href="">  Terms </a></span><span style="color: orange; font-size: 13px;"> and</span> <span><a href=""> Privacy Policy</a></span></a>
+                  </div>
+
+                  <div class="u-form-group">
+                    <button>Register Now</button>
+                  </div>
+                
+                </form>
+               
+           
+                </form>
+               
+              </div>
+           </div>
+       </div>
+ 
+
+      
+
+
+
+
+    <!---------LOGIN PAGE ENDED-->
+
+
+
+
+
+
+   
+</body>
+</html>
